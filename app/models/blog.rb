@@ -4,4 +4,6 @@ class Blog < ApplicationRecord
 	validates :post, presence: true,
 				length: { maximum: 1500 }
 
+	belongs_to :User
+
 end
